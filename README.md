@@ -36,4 +36,4 @@ The instructions for running the code are provided below.
  3. Open Jupyter Notebook.
  4. On Notebook, open Tennis.ipynb and select drlnd in the Kernel.
  5. Run the code in each cell. The results for the weights are stored in the checkpoint_actor.pth and checkpoint_critic.pth files. The scores per episode are shown in a plot in the Notebook. The environment with the tennis court is shown in another window. The training will take more than 3 hours with GPU.
- 6. After the environment is sovled, the environment is close and the project is completed.
+ 6. After the environment is sovled, the environment is closed and the project is completed.
