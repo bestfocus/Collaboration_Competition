@@ -14,31 +14,35 @@ This project contains two agents playing a tennis ball in the Unity ML-Agents Te
 The code is written in Python 3 and PyTorch. Instructions for installing dependencies or downloading needed files for Windows, Linux or Mac are provided on https://github.com/udacity/deep-reinforcement-learning#dependencies. The process is summarized as follows:
  1. Download AnaConda3
  2. Open the AnaConda Powershell Prompt to enter the following commands to create and activate a new env "drlnd" using an old Python version 3.6 required by this project:
-   * Windows:
+    * Windows:
     ```
     conda create --name drlnd python=3.6
-    conda activate drlnd ```
-   * Linux or Mac:
+    conda activate drlnd 
+    ```
+    * Linux or Mac:
     ```
     conda create --name drlnd python=3.6
-    source activate drlnd ```
+    source activate drlnd 
+    ```
  3. In the new env "drlnd", run the following to install the old PyTorch version for installing Unity provided by Udacity:
     ```
     conda install pytorch=0.4.0 -c pytorch
     git clone https://github.com/udacity/deep-reinforcement-learning.git
     cd deep-reinforcement-learning/python
-    pip install . ```
+    pip install . 
+    ```
  4. Create an IPython kernel for the drlnd environment:
     ``` 
-    python -m ipykernel install --user --name drlnd --display-name "drlnd" ```
+    python -m ipykernel install --user --name drlnd --display-name "drlnd" 
+    ```
 ## Instructions
 The instructions for running the code are provided below. 
  1. Replace the notebook Tennis.ipynb in deep-reinforcement-learning/p3_collab-compet with the code given here and also copy model.py and agent.py to the same folder.
  2. Download files:
-   - For Windows 64-bit: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip
-   - For Windows 32-bit: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip
-   - For Linux: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip
-   - For Mac OSX: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip
+    - For Windows 64-bit: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip
+    - For Windows 32-bit: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip
+    - For Linux: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip
+    - For Mac OSX: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip
  3. Unzip the zip file to get a folder and place the folder in the same p3_collab-compet folder.
  3. Open Jupyter Notebook.
  4. On Notebook, open Tennis.ipynb and select drlnd in the Kernel.
