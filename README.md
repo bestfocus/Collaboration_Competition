@@ -11,12 +11,18 @@ This project contains two agents playing a tennis ball in the Unity ML-Agents Te
  6.	Solve the environment: After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the maximum of these 2 scores. This yields a single score for each episode. In order to solve the environment, agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents).
 
 ## Getting Started
-The code is written in Python 3 and PyTorch. Instructions for installing dependencies or downloading needed files for Windows are provided on https://github.com/udacity/deep-reinforcement-learning#dependencies. The process is summarized as follows:
+The code is written in Python 3 and PyTorch. Instructions for installing dependencies or downloading needed files for Windows, Linux or Mac are provided on https://github.com/udacity/deep-reinforcement-learning#dependencies. The process is summarized as follows:
  1. Download AnaConda3
  2. Open the AnaConda Powershell Prompt to enter the following commands to create and activate a new env "drlnd" using an old Python version 3.6 required by this project:
+    .Windows:
     ```
     conda create --name drlnd python=3.6
     conda activate drlnd
+    ```
+    .Linux or Mac:
+    ```
+    conda create --name drlnd python=3.6
+    source activate drlnd
     ```
  3. In the new env "drlnd", run the following to install the old PyTorch version for installing Unity provided by Udacity:
     ```
@@ -32,7 +38,12 @@ The code is written in Python 3 and PyTorch. Instructions for installing depende
 ## Instructions
 The instructions for running the code are provided below. 
  1. Replace the notebook Tennis.ipynb in deep-reinforcement-learning/p3_collab-compet with the code given here and also copy model.py and agent.py to the same folder.
- 2. For Windows 64-bit, download the file https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip, unzip the file and place the folder Tennis_Windows_x86_64 in the same p3_collab-compet folder.
+ 2. Download files:
+    -For Windows 64-bit: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip
+    -For Windows 32-bit: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip
+    -For Linux: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip
+    -For Mac OSX: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip
+ 3. Unzip the zip file to get a folder and place the folder in the same p3_collab-compet folder.
  3. Open Jupyter Notebook.
  4. On Notebook, open Tennis.ipynb and select drlnd in the Kernel.
  5. Run the code in each cell. The results for the weights are stored in the checkpoint_actor.pth and checkpoint_critic.pth files. The scores per episode are shown in a plot in the Notebook. The environment with the tennis court is shown in another window. The training will take more than 3 hours with GPU.
